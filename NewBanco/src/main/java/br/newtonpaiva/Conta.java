@@ -4,11 +4,12 @@ public class Conta {
     private Integer numero;
     private Double saldo;
 
+    public Conta(){}
+
     public Conta(Integer numero){
         this.numero = numero;
         this.saldo = 100.00;
     }
-
 
     public Double sacar(Double valor) {
         return saldo -= valor;
@@ -31,6 +32,10 @@ public class Conta {
 
     public Double getSaldo() {
         return saldo;
+    }
+
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
     }
 
     @Override
